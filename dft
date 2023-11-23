@@ -16,10 +16,10 @@ mag_b = abs(A1); %abs give magnitude here
 ph_b = angle(A1);
 % Dermination of interchnage of phase value
 newfft_a = mag_a.*(exp(1i*ph_b))
-newfft_b = mag_b.*(exp(li*ph_a))
+newfft_b = mag_b.*(exp(1i*ph_a))
 % reconstruction of the image using Inverse tranformation
 R_a = ifft2(newfft_a);
-R_b = iifft2(newfft_b);
+R_b = ifft2(newfft_b);
 DFT :
 % program to compute 2D DFT of gray scale image
 clc
